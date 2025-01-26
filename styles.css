@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(128, 0, 128, 0.8); /* Purple background with transparency */
+    background-image: url('/wp7532802.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between project links */
+}
+
+.project {
+    background-color: rgba(255, 255, 255, 0.7); /* Light background for links */
+    color: #800080; /* Purple text */
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    width: 200px; /* Width for buttons */
+}
+
+.project:hover {
+    background-color: rgba(255, 255, 255, 1); /* Change background on hover */
+    transform: scale(1.05); /* Slight scale effect */
+}
+
+/* Responsive styles */
+@media (min-width: 600px) {
+    .projects {
+        flex-direction: row; /* Change to row layout on larger screens */
+    }
+}
